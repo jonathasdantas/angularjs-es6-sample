@@ -1,0 +1,19 @@
+@import 'main.scss';
+$fontSize: 16px;
+
+.nav {
+  background-color: $primaryColor;
+
+  a.nav-item {
+    &:hover {
+      color: $secondaryColor;
+    }
+
+    color: $fontColor;
+    font-size: $fontSize;
+  }
+
+  .nav-toggle span {
+    background-color: $fontColor;
+  }
+}

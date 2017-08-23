@@ -1,0 +1,29 @@
+@import 'main.scss';
+
+.flight-info {
+  background-image: $flightInfoBackground;
+  border-radius: $defaultBorderRadius;
+  align-items: center;
+  
+  &:not(:last-child) {
+    margin-bottom: $defaultMargin;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+
+  div {
+    text-align: center;
+    padding: $defaultMargin;
+
+    p {
+      color: $fontColor
+    }
+
+    svg {
+      width: 50px;
+      fill: $secondaryColor;
+    }
+  }
+}

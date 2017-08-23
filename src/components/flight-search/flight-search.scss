@@ -1,0 +1,19 @@
+@import 'main.scss';
+
+.search-container {
+  label {
+    color: $fontColor;
+  }
+
+  .field {
+      margin-bottom: 0.75rem;
+  }
+
+  button {
+    margin-top: $defaultMargin;
+    background-color: $secondaryColor;
+    color: $fontColor;
+  }
+
+  background-image: $flightSearchBackground;
+}

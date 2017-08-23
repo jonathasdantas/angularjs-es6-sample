@@ -1,0 +1,11 @@
+<section class="section search-container">
+  <div class="container">
+    <airport-selector-wrapper on-update="$ctrl.onAirportsSelected($event)"></airport-selector-wrapper>
+    <date-wrapper on-update="$ctrl.onDatesSelected($event)"></date-wrapper>
+    <div>
+      <p class="control">
+        <button class="button is-medium" ng-click="$ctrl.findFlights()">Find Flights</button>
+      </p>
+    </div>
+  </div>
+</section>

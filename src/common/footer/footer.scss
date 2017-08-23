@@ -1,0 +1,9 @@
+@import 'main.scss';
+
+.footer {
+  background-color: #666;
+
+  p, strong {
+    color: $fontColor;
+  }
+}

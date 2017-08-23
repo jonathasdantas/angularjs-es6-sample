@@ -1,0 +1,9 @@
+<div class="input-with-autocomplete">
+  <input class="input is-medium" placeholder="{{ $ctrl.placeholder }}" ng-model="$ctrl.search" ng-change="$ctrl.onUpdateContent()" ng-blur="$ctrl.onBlur()" ng-keyup="$ctrl.onKeyUp($event)" type="text">
+  <div class="autocomplete" ng-show="$ctrl.autocomplete">{{ $ctrl.autocomplete.name }} ({{ $ctrl.autocomplete.iataCode }})</div>
+</div>
+<ul ng-show="$ctrl.search && !$ctrl.autocomplete && $ctrl.hasSuggestions()" class="suggestion-box">
+  <li ng-repeat="(iata, info) in $ctrl.filteredAirports">
+    <a ng-click="$ctrl.setAirport(info.name, info.iataCode)">{{ info.name }} ({{ info.iataCode }})</a>
+  </li> 
+</ul>

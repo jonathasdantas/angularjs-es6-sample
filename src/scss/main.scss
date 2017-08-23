@@ -1,0 +1,27 @@
+/* Application Variables Definition */
+
+// Coloring
+$primaryColor: #073590;
+$secondaryColor: #F1C933;
+$fontColor: #FFF;
+
+// Default Values
+$defaultMargin: 20px;
+$defaultBorderRadius: 5px;
+
+// Screen Responsiveness
+$mediaMaxWidth: 769px;
+$mediaMinWidth: 480px;
+
+// Flight Search
+$flightSearchBackground: linear-gradient(to top,#1e8adf,#2994e6);
+
+// Flight List
+$flightInfoBackground: linear-gradient(to top, $primaryColor, #0e77c7);
+
+// Airport Selector
+$suggestionFontColor: #000;
+$suggestionBackgroundColor: #FFF;
+
+$autoCompleteColor: #c1c1c1;
+$autoCompleteFontSize: 20px;

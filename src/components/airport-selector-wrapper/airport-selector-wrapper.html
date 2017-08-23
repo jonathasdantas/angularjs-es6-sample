@@ -1,0 +1,19 @@
+<div class="field">
+  <label class="label">
+    From
+  </label>
+
+  <p class="control">
+    <airport-selector placeholder="Departure Airport" airports="$ctrl.from" airport="$ctrl.selectedFromAirport" on-update="$ctrl.setAvailableRoutes($event)"></airport-selector>
+  </p>
+</div>
+
+<div class="field">
+  <label class="label">
+    To
+  </label>
+
+  <p class="control">
+    <airport-selector placeholder="Destination Airport" airports="$ctrl.to" airport="$ctrl.selectedToAirport" on-update="$ctrl.setSelectedToAirport($event)"></airport-selector>
+  </p>
+</div>

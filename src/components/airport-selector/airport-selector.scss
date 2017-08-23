@@ -1,0 +1,38 @@
+@import 'main.scss';
+
+ul.suggestion-box {
+  position: absolute;
+  background-color: $suggestionBackgroundColor;
+  padding: 10px;
+  z-index: 99;
+  width: 100%;
+
+  max-height: 200px;
+  overflow-y: scroll;
+
+  li a {
+    color: $suggestionFontColor;
+    font-weight: bold;
+  }
+}
+
+.input-with-autocomplete {
+  background-color: $suggestionBackgroundColor;
+  border-radius: 3px;
+
+  .input {
+    background: 0 0;
+    z-index: 10;
+  }
+
+  .autocomplete {
+    color: $autoCompleteColor;
+
+    position: absolute;
+    top: 8px;
+    left: 13px;
+
+    font-size: $autoCompleteFontSize;
+    font-weight: normal;
+  }
+}
